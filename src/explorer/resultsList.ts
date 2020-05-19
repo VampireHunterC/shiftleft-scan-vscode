@@ -351,7 +351,7 @@ export class ResultsList {
       groupIndex++
     ) {
       const group: ResultsListGroup = this.data.groups[groupIndex];
-      let groupState: ToggleState = ToggleState.expanded;
+      let groupState: ToggleState = ToggleState.collapsed;
       if (this.collapsedGroups.indexOf(`${groupIndex}`) !== -1) {
         groupState = ToggleState.collapsed;
       }
